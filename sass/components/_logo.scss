@@ -1,7 +1,12 @@
+.logo {
+    display: flex;
+}
+
 .logo__label {
     font-style: italic;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
-    color: $mainBlueColor; 
+    color: $mainBlueColor;
+    text-decoration: none; 
 }

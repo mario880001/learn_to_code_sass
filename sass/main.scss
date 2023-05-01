@@ -40,7 +40,10 @@
     &__link:hover {
         color: $orangeColorHover;
     }
-
 }
 
-// font-family: 'Work Sans', sans-serif;
+.projects {
+    width: 1440px;
+    height: 646px;
+    background-image: url(image/smart-building.jpg);
+}
