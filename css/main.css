@@ -71,7 +71,7 @@
   color: #F9995D;
 }
 
-j .mission {
+.mission {
   width: 1440px;
   height: 646px;
   background-color: #b91010;
@@ -79,7 +79,7 @@ j .mission {
   background-size: cover;
   position: relative;
 }
-j .mission__building {
+.mission__building {
   font-weight: 600;
   font-size: 72px;
   line-height: 84px;
@@ -90,7 +90,7 @@ j .mission__building {
   width: 556px;
   height: 168px;
 }
-j .mission__back, j .mission__next {
+.mission__back, .mission__next {
   width: 208px;
   height: 40px;
   background-color: #292E3D;
@@ -102,11 +102,11 @@ j .mission__back, j .mission__next {
   right: 0;
   bottom: 0;
 }
-j .mission__back {
+.mission__back {
   position: absolute;
   right: 208px;
 }
-j .mission__back span, j .mission__next span {
+.mission__back span, .mission__next span {
   color: #FFFFFF;
 }
 
