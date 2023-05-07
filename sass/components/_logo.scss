@@ -1,5 +1,13 @@
 .logo {
     display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo__image {
+    // background-color: aquamarine;
+    // width: 70px;
+    // height: 70px;
 }
 
 .logo__label {
@@ -8,5 +16,6 @@
     font-size: 30px;
     line-height: 35px;
     color: $mainBlueColor;
-    text-decoration: none; 
+    // background-color: burlywood;
+    margin-left: 10px;
 }

@@ -1,7 +1,11 @@
+@import 'utils/colors';
+
 * {
     box-sizing: border-box;
     font-family: 'Work Sans';
     font-style: normal;
+    color: $blackColorBcg;
+    margin: 0;
 }
 
 .container {
@@ -13,12 +17,13 @@
   .box {
     width: 1440px;
     height: 80px;
-    background-color: #958080;
+    // background-color: #ff1e00;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 112px;
+    // margin-top: 50px
 }
 
 @import 'components/logo';
@@ -34,16 +39,13 @@
 
     &__link {
         text-decoration: none;
-        background-color: yellowgreen;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        // background-color: yellowgreen;
     }
 
     &__link:hover {
         color: $orangeColorHover;
     }
-}
-
-.projects {
-    width: 1440px;
-    height: 646px;
-    background-image: url(image/smart-building.jpg);
 }

@@ -3,6 +3,8 @@
           box-sizing: border-box;
   font-family: "Work Sans";
   font-style: normal;
+  color: #292E3D;
+  margin: 0;
 }
 
 .container {
@@ -14,7 +16,6 @@
 .box {
   width: 1440px;
   height: 80px;
-  background-color: #958080;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,11 +32,23 @@
   padding: 0 112px;
 }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
 .logo__label {
   font-style: italic;
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
+  color: #2947A9;
+  margin-left: 10px;
 }
 
 .nav {
@@ -50,8 +63,10 @@
 }
 .nav__link {
   text-decoration: none;
-  background-color: yellowgreen;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 .nav__link:hover {
-  color: orange;
+  color: #F9995D;
 }
