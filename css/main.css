@@ -133,3 +133,49 @@
   font-size: 24px;
   line-height: 28px;
 }
+
+.reputation {
+  width: 1440px;
+  height: 433px;
+}
+.reputation__item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.reputation__box {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 80px;
+}
+
+.bestbox {
+  border: 1px solid #E0E3EB;
+  border-radius: 4px;
+  width: 292px;
+  height: 197px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.bestbox__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 20px;
+}
+.bestbox__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 18px;
+  padding-right: 18px;
+}
