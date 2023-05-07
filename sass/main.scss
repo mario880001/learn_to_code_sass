@@ -49,3 +49,78 @@
         color: $orangeColorHover;
     }
 }
+
+
+.mission {
+    width: 1440px;
+    height: 646px;
+    background-color: #b91010;
+    background-image: url(../image/build11.jpg);
+    background-size: cover;
+    position: relative;
+
+    &__building {
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 84px;
+        color: $blackColorBcg;
+        position: absolute;
+        top: 239px;
+        left: 112px;
+        width: 556px;
+        height: 168px;
+    }
+
+    &__back, &__next  {
+        width: 208px;
+        height: 40px;
+        background-color: $blackColorBcg;
+        color: $mainWhiteColor;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__back {
+        position: absolute;
+        right: 208px;
+    }
+
+    &__back span, &__next span {
+        color: $mainWhiteColor;
+    }
+}
+
+.mission__feature {
+    // display: flex;
+    // flex-wrap: wrap;
+    width: 416px;
+    height: 150px;
+    background-color: $mainBlueColor;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+
+    &__name, &__building {
+        color: $mainWhiteColor;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    &__name {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        // background-color: rgb(43, 255, 0);
+    }
+
+    &__building {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        // background-color: red;
+    }
+}

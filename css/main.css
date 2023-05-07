@@ -70,3 +70,66 @@
 .nav__link:hover {
   color: #F9995D;
 }
+
+.mission {
+  width: 1440px;
+  height: 646px;
+  background-color: #b91010;
+  background-image: url(../image/build11.jpg);
+  background-size: cover;
+  position: relative;
+}
+.mission__building {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 84px;
+  color: #292E3D;
+  position: absolute;
+  top: 239px;
+  left: 112px;
+  width: 556px;
+  height: 168px;
+}
+.mission__back, .mission__next {
+  width: 208px;
+  height: 40px;
+  background-color: #292E3D;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.mission__back {
+  position: absolute;
+  right: 208px;
+}
+.mission__back span, .mission__next span {
+  color: #FFFFFF;
+}
+
+.mission__feature {
+  width: 416px;
+  height: 150px;
+  background-color: #2947A9;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+}
+.mission__feature__name, .mission__feature__building {
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 20px;
+}
+.mission__feature__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+.mission__feature__building {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
