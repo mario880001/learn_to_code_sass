@@ -232,3 +232,111 @@
           box-shadow: inset 0 0 5px 2px;
   font-size: 17px;
 }
+
+.services {
+  height: 608px;
+  background-color: #F6F8F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 44px 0 36px 0;
+}
+
+.services__box {
+  list-style: none;
+  padding: 0;
+  width: 1009px;
+  height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services__item {
+  background-color: #2947A9;
+  border-radius: 4px;
+  width: 271px;
+  height: 181px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__item--white {
+  background-color: #FFFFFF;
+}
+
+.services__icon {
+  width: 50px;
+  height: 50px;
+  background-color: chartreuse;
+  position: relative;
+}
+
+.services__picture {
+  width: 23.3px;
+  height: 23.3px;
+  background-color: #7595FD;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.services__logos {
+  width: 40px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+.services__line {
+  width: 60px;
+  height: 2px;
+  background-color: #E0E3EB;
+  margin: 20px 0;
+}
+
+.services__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2947A9;
+}
+
+.services__name--white {
+  color: #FFFFFF;
+}

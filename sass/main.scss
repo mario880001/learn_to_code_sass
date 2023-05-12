@@ -223,3 +223,91 @@
         font-size: 17px;
     }
 }
+
+// services
+.services {
+    height: 608px;
+    background-color: $grayColorBcg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 44px 0 36px 0;
+}
+
+.services__box {
+    list-style: none;
+    padding: 0;
+    width: 1009px;
+    height: 410px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services__item {
+    background-color: $mainBlueColor;
+    border-radius: 4px;
+    width: 271px;
+    height: 181px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__item--white {
+    background-color: $mainWhiteColor;
+}
+
+.services__icon {
+    width: 50px;
+    height: 50px;
+    background-color: chartreuse;
+    position: relative;
+}
+
+@mixin miniBox ($color) {
+    background-color: $color;
+}
+
+.services__picture {
+    width: 23.3px;
+    height: 23.3px;
+    @include miniBox (#7595FD);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.services__logos {
+    width: 40px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.services__line {
+    width: 60px;
+    height: 2px;
+    background-color: #E0E3EB;
+    margin: 20px 0;
+}
+
+.services__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: $mainBlueColor;
+}
+
+.services__name--white {
+    color: $mainWhiteColor;
+}
