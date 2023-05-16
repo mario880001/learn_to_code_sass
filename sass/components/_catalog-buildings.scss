@@ -1,0 +1,36 @@
+.content {
+    flex-grow: 1;
+    background-color: #F9995D;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-content: flex-start;
+    justify-content: center;
+    padding-top: 170px;
+}
+
+.catalog {
+    background-color: $mainBlueColor;
+    width: 384px;
+    height: 331px;
+
+    &__image {
+        width: 384px;
+        height: 247px;
+    }
+
+    &__building {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: $mainWhiteColor;
+        padding: 12px 0 0 12px;
+    }
+
+    &__address {
+        @extend .catalog__building;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

@@ -578,3 +578,112 @@
   color: #FFFFFF;
   text-decoration: none;
 }
+
+.projects {
+  height: 1098px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  width: 416px;
+  background-color: #b91010;
+}
+.sidebar__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 88px 0 40px 112px;
+}
+
+.ourprojects {
+  list-style: none;
+  padding-left: 119px;
+}
+.ourprojects__list {
+  background-color: darkgreen;
+  margin-bottom: 20px;
+}
+.ourprojects__list:hover {
+  list-style-image: url(../image/Rectangle.svg);
+}
+.ourprojects__link {
+  color: #cad6c2;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  padding-left: 13px;
+}
+.ourprojects__link:hover {
+  color: #2947A9;
+  font-weight: 700;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #F9995D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 170px;
+}
+
+.catalog {
+  background-color: #2947A9;
+  width: 384px;
+  height: 331px;
+}
+.catalog__image {
+  width: 384px;
+  height: 247px;
+}
+.catalog__building, .catalog__address {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  padding: 12px 0 0 12px;
+}
+.catalog__address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.buttons {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.buttons__back, .buttons__next {
+  width: 295px;
+  height: 64px;
+  background-color: #292E3D;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}

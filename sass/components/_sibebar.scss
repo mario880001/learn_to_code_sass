@@ -1,0 +1,39 @@
+.sidebar {
+    width: 416px;
+    background-color: #b91010;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        margin: 88px 0 40px 112px;
+    }
+}
+
+.ourprojects {
+    list-style: none;
+    padding-left: 119px;
+
+    &__list {
+        background-color: darkgreen;
+        margin-bottom: 20px;
+    }
+
+    &__list:hover {
+        list-style-image: url(../image/Rectangle.svg);
+    }
+
+    &__link {
+        color: #cad6c2;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-decoration: none;
+        padding-left: 13px;
+    }
+    
+    &__link:hover {
+        color: $mainBlueColor;
+        font-weight: 700;
+    }
+}

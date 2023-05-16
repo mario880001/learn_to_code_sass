@@ -1,0 +1,20 @@
+.buttons {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+
+    &__back, &__next {
+        width: 295px;
+        height: 64px;
+        background-color: $blackColorBcg;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $mainWhiteColor;
+    }
+}
+
+.circles {
+    display: flex;
+    gap: 16px;
+}

@@ -557,5 +557,14 @@
     }
 }
 
+// projects
+.projects {
+    height: 1098px;
+    display: flex;
+}
 
+@import 'components/sibebar';
 
+@import 'components/catalog-buildings';
+
+@import 'components/catalog-buttons';
