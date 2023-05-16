@@ -270,7 +270,6 @@
 .services__icon {
     width: 50px;
     height: 50px;
-    background-color: chartreuse;
     position: relative;
 }
 
@@ -288,10 +287,63 @@
 }
 
 .services__logos {
-    width: 40px;
     position: absolute;
+}
+
+.services__logos--construction {
+    width: 31.66px;
+    height: 33.33px;
+    bottom: 3.34px;
+    left: 3.33px;
+}
+
+.services__logos--constructiontoo {
+    width: 3.33px;
+    height: 3.33px;
+    bottom: 11.67px;
+    left: 11.67px;
+}
+
+.services__logos--renovation {
+    width: 31.67px;
+    height: 33.33px;
+    bottom: 3.33px;
+    left: 5px;
+}
+
+.services__logos--consultation {
+    width: 31.94px;
+    height: 31.97px;
+    bottom: 4.02px;
+    left: 4.03px;
+}
+
+.services__logos--repair {
+    width: 33.33px;
+    height: 26.67px;
+    bottom: 6.67px;
+    left: 3.33px;
+}
+
+.services__logos--architecture {
+    width: 18.82px;
+    height: 30px;
     bottom: 5px;
-    left: 10px;
+    left: 10.6px;
+}
+
+.services__logos--electric {
+    width: 15px;
+    height: 21.67px;
+    bottom: 11.67px;
+    left: 5px;
+}
+
+.services__logos--electrictoo {
+    width: 18.33px;
+    height: 13.33px;
+    bottom: 6.67px;
+    left: 16.67px;
 }
 
 .services__line {
@@ -310,4 +362,149 @@
 
 .services__name--white {
     color: $mainWhiteColor;
+}
+
+
+// experience
+.experience {
+    height: 723px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.experience__years {
+    flex-basis: 500px;
+
+    &__name {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        color: $mainBlueColor;
+        margin-top: 172px;
+    }
+
+    &__description {
+        width: 330px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #525B7A;
+        margin-top: 40px;
+    }
+
+    &__button {
+        width: 176px;
+        height: 53px;
+        margin-top: 40px;
+        padding: 16px 39px;
+        background-color: $mainBlueColor;
+        border: none;
+        border-radius: 2px;
+        
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: $mainWhiteColor;
+        text-decoration: none;
+    }
+}
+
+.experience__box {
+    flex-grow: 1;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+
+    &__item {
+        height: 155px;
+        background-color: $mainWhiteColor;
+        border: 1px solid $mainWhiteColor;
+        box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1), 0px 4px 6px -2px rgba(17, 24, 39, 0.05);
+        border-radius: 4px;
+        position: relative;
+    }
+
+    &__item--clients {
+        width: 280px;
+        position: absolute;
+        top: 122px;
+        left: 512px;
+        z-index: 4;
+    }
+
+    &__item--completed {
+        width: 361px;
+        position: absolute;
+        top: 221px;
+        left: 212px;
+        z-index: 1;
+    }
+
+    &__item--win {
+        width: 286px;
+        position: absolute;
+        bottom: 204px;
+        left: 458px;
+        z-index: 3;
+    }
+
+    &__item--business {
+        width: 333px;
+        position: absolute;
+        bottom: 99px;
+        left: 261px;
+        z-index: 2;
+    }
+
+    &__image {
+        position: absolute;
+    }
+
+    &__image--one {
+        top: -19px;
+        right: -28px;
+    }
+
+    &__image--two {
+        top: -49px;
+        left: -33px;
+    }
+
+    &__image--three {
+        top: -15px;
+        right: -21px;
+    }
+
+    &__image--four {
+        bottom: -42px;
+        right: -39px;
+    }
+
+    &__number {
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 50px;
+        padding: 30px 0 0 30px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #667299;
+        margin: 15px 0 0 65px;
+    }
+
+    &__line {
+        width: 7px;
+        height: 28px;
+        background-color: #F9995D;
+        position: absolute;
+        bottom: 30px;
+        left: 46px;
+        border: none;
+    }
 }
