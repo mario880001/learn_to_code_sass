@@ -526,3 +526,55 @@
   left: 46px;
   border: none;
 }
+
+.consultation {
+  height: 300px;
+  background-image: url("../image/bg-consultation.png");
+  position: relative;
+}
+.consultation__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  padding: 100px 0 0 112px;
+}
+
+.consultation__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0 0 112px;
+}
+.consultation__phone__call, .consultation__phone__number {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.consultation__button {
+  width: 233px;
+  height: 52px;
+  border: 3px solid #FFFFFF;
+  border-radius: 2px;
+  position: absolute;
+  top: 124px;
+  right: 159px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.consultation__button__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
