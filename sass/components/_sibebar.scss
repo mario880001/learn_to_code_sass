@@ -1,5 +1,5 @@
 .sidebar {
-    width: 416px;
+    min-width: 416px;
     background-color: #b91010;
 
     &__title {
@@ -11,7 +11,7 @@
 }
 
 .ourprojects {
-    list-style: none;
+    // list-style: none;
     padding-left: 119px;
 
     &__list {

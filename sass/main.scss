@@ -89,6 +89,7 @@
 
     &__back span, &__next span {
         color: $mainWhiteColor;
+        font-size: 20px;
     }
 }
 
@@ -561,6 +562,7 @@
 .projects {
     height: 1098px;
     display: flex;
+    justify-content: space-between
 }
 
 @import 'components/sibebar';
@@ -568,3 +570,6 @@
 @import 'components/catalog-buildings';
 
 @import 'components/catalog-buttons';
+
+// information
+@import 'components/information-form';

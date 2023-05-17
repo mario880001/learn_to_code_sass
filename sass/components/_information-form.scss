@@ -1,0 +1,84 @@
+.information {
+    height: 632px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 60px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+
+    &__button {
+        width: 271px;
+        height: 53px;
+        background-color: $mainBlueColor;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: $mainWhiteColor;
+    }
+}
+
+.field {
+    width: 600px;
+    border: 2px solid greenyellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 20px;
+
+    &__description {
+        width: 539px;
+        padding: 0 11px 38px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    &__label {
+        width: 280px;
+        height: 41px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        padding-left: 8px;
+        color: #A3AAC2;
+        border: 1px solid #E0E3EB;
+        border-radius: 4px;
+    }
+
+    &__label:hover {
+        color: #C40303;
+    }
+
+    &__label--message {
+        width: 592px;
+        height: 135px;
+        padding-top: 10px;
+    }
+
+    &__required {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #667299;
+    }
+
+    &__red {
+        color: #C40303;
+    }
+}

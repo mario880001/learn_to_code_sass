@@ -214,6 +214,46 @@
                 </div>
             </main>
         </div>
+
+        <div class="information">
+            <h2 class="information__title">What can us do for you?</h2>
+            <form class="form" action="">
+                <div class="field" role="group" aria-labelledby="info-head">
+                    <p class="field__description" id="info-head">We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
+                    
+                    <label class="">
+                        <input class="field__label" type="text" name="username" placeholder="Your Name*">
+                    </label>
+    
+                    <label class="">
+                        <input class="field__label" type="text" name="email" placeholder="Email*">
+                    </label>
+
+                    <label class="">
+                        <input class="field__label" list="contactings" name="contactings" placeholder="Reason for Contacting*">
+                        <datalist id="contactings">
+                            <option value="Commercial">Commercial</option>
+                            <option value="Commercial LUX">Commercial LUX</option>
+                            <option value="Residential">Residential</option>
+                            <option value="Residential LUX">Residential LUX</option>
+                        </datalist>
+                    </label>
+    
+                    <label class="">
+                        <input class="field__label" type="tel" name="phone_number" placeholder="Phone" minlength="8">
+                    </label>
+                    
+    
+                    <label class="">
+                        <textarea class="field__label field__label--message" class="tito" name="message" rows="10" placeholder="Message"></textarea>
+                    </label>
+
+                    <p class="field__required"><span class="field__red">*</span> indicates a required field</p>
+                </div>
+                
+                <button class="form__button" type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 

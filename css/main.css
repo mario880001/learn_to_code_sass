@@ -108,6 +108,7 @@
 }
 .mission__back span, .mission__next span {
   color: #FFFFFF;
+  font-size: 20px;
 }
 
 .mission__feature {
@@ -584,10 +585,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sidebar {
-  width: 416px;
+  min-width: 416px;
   background-color: #b91010;
 }
 .sidebar__title {
@@ -598,7 +602,6 @@
 }
 
 .ourprojects {
-  list-style: none;
   padding-left: 119px;
 }
 .ourprojects__list {
@@ -686,4 +689,101 @@
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
+}
+
+.information {
+  height: 632px;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-top: 60px;
+}
+.information__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 28px;
+}
+.form__button {
+  width: 271px;
+  height: 53px;
+  background-color: #2947A9;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.field {
+  width: 600px;
+  border: 2px solid greenyellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 20px;
+}
+.field__description {
+  width: 539px;
+  padding: 0 11px 38px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+.field__label {
+  width: 280px;
+  height: 41px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 8px;
+  color: #A3AAC2;
+  border: 1px solid #E0E3EB;
+  border-radius: 4px;
+}
+.field__label:hover {
+  color: #C40303;
+}
+.field__label--message {
+  width: 592px;
+  height: 135px;
+  padding-top: 10px;
+}
+.field__required {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #667299;
+}
+.field__red {
+  color: #C40303;
 }
