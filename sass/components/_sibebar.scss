@@ -1,6 +1,5 @@
 .sidebar {
     min-width: 416px;
-    background-color: #b91010;
 
     &__title {
         font-weight: 700;
@@ -11,17 +10,17 @@
 }
 
 .ourprojects {
-    // list-style: none;
-    padding-left: 119px;
+    list-style: none;
+    padding-left: 112px;
 
     &__list {
         background-color: darkgreen;
         margin-bottom: 20px;
     }
 
-    &__list:hover {
-        list-style-image: url(../image/Rectangle.svg);
-    }
+    // &__list:hover {
+    //     list-style-image: url(../image/Rectangle.svg);
+    // }
 
     &__link {
         color: #cad6c2;
@@ -29,11 +28,22 @@
         font-size: 24px;
         line-height: 28px;
         text-decoration: none;
-        padding-left: 13px;
+        padding-left: 16px;
     }
     
     &__link:hover {
         color: $mainBlueColor;
         font-weight: 700;
+    }
+
+    &__list:hover::before {
+        content: '';
+        width: 4px;
+        height: 28px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("/image/Rectangle.svg");
+        display: inline-block;
+        // margin-right: 15px;
     }
 }

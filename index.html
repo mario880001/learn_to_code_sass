@@ -222,15 +222,15 @@
                     <p class="field__description" id="info-head">We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
                     
                     <label class="">
-                        <input class="field__label" type="text" name="username" placeholder="Your Name*">
+                        <input class="field__label" type="text" name="username" placeholder="Your Name*" required>
                     </label>
     
                     <label class="">
-                        <input class="field__label" type="text" name="email" placeholder="Email*">
+                        <input class="field__label" type="text" name="email" placeholder="Email*" required>
                     </label>
 
                     <label class="">
-                        <input class="field__label" list="contactings" name="contactings" placeholder="Reason for Contacting*">
+                        <input class="field__label" list="contactings" name="contactings" placeholder="Reason for Contacting*" >
                         <datalist id="contactings">
                             <option value="Commercial">Commercial</option>
                             <option value="Commercial LUX">Commercial LUX</option>
@@ -247,10 +247,8 @@
                     <label class="">
                         <textarea class="field__label field__label--message" class="tito" name="message" rows="10" placeholder="Message"></textarea>
                     </label>
-
-                    <p class="field__required"><span class="field__red">*</span> indicates a required field</p>
                 </div>
-                
+                <p class="form__required"><span class="form__red">*</span> indicates a required field</p>
                 <button class="form__button" type="submit">Submit</button>
             </form>
         </div>

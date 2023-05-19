@@ -592,7 +592,6 @@
 
 .sidebar {
   min-width: 416px;
-  background-color: #b91010;
 }
 .sidebar__title {
   font-weight: 700;
@@ -602,14 +601,12 @@
 }
 
 .ourprojects {
-  padding-left: 119px;
+  list-style: none;
+  padding-left: 112px;
 }
 .ourprojects__list {
   background-color: darkgreen;
   margin-bottom: 20px;
-}
-.ourprojects__list:hover {
-  list-style-image: url(../image/Rectangle.svg);
 }
 .ourprojects__link {
   color: #cad6c2;
@@ -617,18 +614,26 @@
   font-size: 24px;
   line-height: 28px;
   text-decoration: none;
-  padding-left: 13px;
+  padding-left: 16px;
 }
 .ourprojects__link:hover {
   color: #2947A9;
   font-weight: 700;
+}
+.ourprojects__list:hover::before {
+  content: "";
+  width: 4px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/image/Rectangle.svg");
+  display: inline-block;
 }
 
 .content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background-color: #F9995D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,7 +698,6 @@
 
 .information {
   height: 632px;
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,7 +709,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
-  padding-top: 60px;
+  padding: 60px 424px 61px;
 }
 .information__title {
   font-weight: 700;
@@ -724,7 +728,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 28px;
+  gap: 55px;
+  position: relative;
+}
+.form__required {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #667299;
+  position: absolute;
+  left: 0px;
+  bottom: 81px;
+}
+.form__red {
+  color: #C40303;
 }
 .form__button {
   width: 271px;
@@ -737,8 +754,6 @@
 }
 
 .field {
-  width: 600px;
-  border: 2px solid greenyellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -754,7 +769,7 @@
 }
 .field__description {
   width: 539px;
-  padding: 0 11px 38px;
+  padding: 0 11px 18px;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -777,13 +792,5 @@
   width: 592px;
   height: 135px;
   padding-top: 10px;
-}
-.field__required {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #667299;
-}
-.field__red {
-  color: #C40303;
+  resize: none;
 }
