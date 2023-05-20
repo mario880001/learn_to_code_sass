@@ -87,9 +87,19 @@
         right: 208px;
     }
 
-    &__back span, &__next span {
-        color: $mainWhiteColor;
-        font-size: 20px;
+    &__backarrow {
+        content: '';
+        width: 26px;
+        height: 17px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("/image/arrow_left.svg");
+        display: inline-block;
+    }
+
+    &__nextarrow {
+        @extend .mission__backarrow;
+        background-image: url("/image/arrow_right.svg");
     }
 }
 
@@ -573,3 +583,6 @@
 
 // information
 @import 'components/information-form';
+
+// footer
+@import 'components/footer'
