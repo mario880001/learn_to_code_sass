@@ -7,14 +7,43 @@
         width: 295px;
         height: 64px;
         background-color: $blackColorBcg;
+        border: none;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
         color: $mainWhiteColor;
+        cursor: pointer;
+    }
+
+    &__backarrow {
+        @extend .mission__backarrow;
+    }
+
+    // &:hover &__backarrow, &:hover &__nextarrow {
+    //     transform: rotate(180deg);
+    //     transition-duration: 2s;
+    // }
+    
+    &__nextarrow {
+        @extend .mission__nextarrow;
     }
 }
 
 .circles {
     display: flex;
+    align-items: center;
     gap: 16px;
 }
+
+.circles__button {
+    width: 16px;
+    height: 16px;
+    background-color: $mainBlueColor;
+    mask-image: url(../../image/Ellipse.svg);
+    mask-repeat: no-repeat;
+
+    &:hover {
+        background-color: $mainWhiteColor;
+    }
+}
+

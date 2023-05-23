@@ -54,6 +54,7 @@
     flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 20px;
+    position: relative;
 
     &__description {
         width: 539px;
@@ -76,7 +77,18 @@
     }
 
     &__label:hover {
-        color: #C40303;
+        color: $blackColorBcg;
+    }
+
+    // як зробити кнопку з випадаючим списком?
+    &__button {
+        width: 18px;
+        height: 17px;
+        background: $mainBlueColor;
+        mask-image: url(/image/field_button.svg);
+        position: absolute;
+        top: 158px;
+        left: 252px;
     }
 
     &__label--message {
@@ -85,4 +97,16 @@
         padding-top: 10px;
         resize: none;
     }
+
+    &__redstar {
+        color: rgb(207, 0, 0);
+        position: absolute;
+        top: 94.6px;
+        left: 120px;
+    }
+}
+
+// не вийшло прибирати зірку
+.field__label--redstar:hover .field__redstar {
+    color: rgba(207, 0, 0, 0);
 }

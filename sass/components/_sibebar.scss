@@ -14,8 +14,8 @@
     padding-left: 112px;
 
     &__list {
-        background-color: darkgreen;
-        margin-bottom: 20px;
+        // background-color: darkgreen;
+        // margin-bottom: 20px;
     }
 
     // &__list:hover {
@@ -27,8 +27,11 @@
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
+        line-height: 48px;
         text-decoration: none;
         padding-left: 16px;
+        position: relative;
+        bottom: 6px;
     }
     
     &__link:hover {

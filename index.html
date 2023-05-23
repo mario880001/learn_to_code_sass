@@ -21,11 +21,11 @@
                 <span class="logo__label">The Box</span>
             </a>
             <ul class="nav">
-                <li class="nav__list"><a class="nav__link" href="" target="">Home</a></li>
-                <li class="nav__list"><a class="nav__link" href="" target="">About Us</a></li>
-                <li class="nav__list"><a class="nav__link" href="" target="">Projects</a></li>
-                <li class="nav__list"><a class="nav__link" href="" target="">Services</a></li>
-                <li class="nav__list"><a class="nav__link" href="" target="">Contact Us</a></li>
+                <li class="nav__list"><a class="nav__link" href="#" target="">Home</a></li>
+                <li class="nav__list"><a class="nav__link" href="#about_us" target="">About Us</a></li>
+                <li class="nav__list"><a class="nav__link" href="#projects" target="">Projects</a></li>
+                <li class="nav__list"><a class="nav__link" href="#services" target="">Services</a></li>
+                <li class="nav__list"><a class="nav__link" href="#contact_us" target="">Contact Us</a></li>
             </ul>
         </header>
 
@@ -60,7 +60,7 @@
             </ul>
         </div>
 
-        <div class="history">
+        <div class="history" id="about_us">
             <img class="history__image" src="image/portret.jpg" alt="">
             <div class="history__block">
                 <h2 class="history__title">About us</h2>
@@ -69,7 +69,7 @@
             </div>
         </div>
         
-        <div class="services">
+        <div class="services" id="services">
             <h2 class="services__title">Services</h2>
             <ul class="services__box">
                 <li class="services__item services__item--white">
@@ -170,7 +170,7 @@
             </div>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <aside class="sidebar">
                 <h2 class="sidebar__title">Projects</h2>
                 <ul class="ourprojects">
@@ -202,15 +202,15 @@
                     <figcaption class="catalog__address">2464 Royal Ln. Mesa, New Jersey</figcaption>
                 </figure>
                 <div class="buttons">
-                    <button class="buttons__back" >&larr; Back</button>
+                    <button class="buttons__back"><span class="buttons__backarrow"></span> Back</button>
                     <div class="circles">
-                        <img class="circles__button" src="image/Ellipse.svg" alt="circle">
-                        <img class="circles__button" src="image/Ellipse.svg" alt="circle">
-                        <img class="circles__button" src="image/Ellipse.svg" alt="circle">
-                        <img class="circles__button" src="image/Ellipse.svg" alt="circle">
-                        <img class="circles__button" src="image/Ellipse.svg" alt="circle">
+                        <div class="circles__button"></div>
+                        <div class="circles__button"></div>
+                        <div class="circles__button"></div>
+                        <div class="circles__button"></div>
+                        <div class="circles__button"></div>
                     </div>
-                    <button class="buttons__next" >Next &rarr;</button>
+                    <button class="buttons__next">Next <span class="buttons__nextarrow"></span></button>
                 </div>
             </main>
         </div>
@@ -221,8 +221,9 @@
                 <div class="field" role="group" aria-labelledby="info-head">
                     <p class="field__description" id="info-head">We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
                     
-                    <label class="">
-                        <input class="field__label" type="text" name="username" placeholder="Your Name*" required>
+                    <label class="field__label--redstar">
+                        <input class="field__label " type="text" name="username" placeholder="Your Name*" required>
+                        <p class="field__redstar">*</p>
                     </label>
     
                     <label class="">
@@ -237,6 +238,7 @@
                             <option value="Residential">Residential</option>
                             <option value="Residential LUX">Residential LUX</option>
                         </datalist>
+                        <div class="field__button"></div>
                     </label>
     
                     <label class="">
@@ -253,7 +255,7 @@
             </form>
         </div>
 
-        <footer class="foot">
+        <footer class="foot" id="contact_us">
             <div class="communication">
                 <div class="communication1">
                     <p class="communication1__address"><span class="communication1__bigtext">Address:</span> &nbsp;<a class="communication1__link" href="">6391 Elgin St. Celina, Delaware 10299</a></p>

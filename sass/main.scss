@@ -73,6 +73,7 @@
         width: 208px;
         height: 40px;
         background-color: $blackColorBcg;
+        border: none;
         color: $mainWhiteColor;
         font-weight: 400;
         font-size: 18px;
@@ -80,14 +81,18 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        cursor: pointer;
+    }
+
+    &__next {
+        border-left: 1px solid $mainWhiteColor;
     }
 
     &__back {
-        position: absolute;
         right: 208px;
     }
 
-    &__backarrow {
+    &__backarrow, &__nextarrow {
         content: '';
         width: 26px;
         height: 17px;
@@ -95,10 +100,11 @@
         background-repeat: no-repeat;
         background-image: url("/image/arrow_left.svg");
         display: inline-block;
+        position: relative;
+        bottom: -2px;
     }
 
     &__nextarrow {
-        @extend .mission__backarrow;
         background-image: url("/image/arrow_right.svg");
     }
 }
@@ -227,6 +233,7 @@
         font-size: 18px;
         line-height: 21px;
         color: $mainBlueColor;
+        cursor: pointer;
     }
 
     &__button:hover {
@@ -572,7 +579,7 @@
 .projects {
     height: 1098px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 @import 'components/sibebar';
@@ -585,4 +592,4 @@
 @import 'components/information-form';
 
 // footer
-@import 'components/footer'
+@import 'components/contact-us';
