@@ -81,15 +81,15 @@
     }
 
     // як зробити кнопку з випадаючим списком?
-    &__button {
-        width: 18px;
-        height: 17px;
-        background: $mainBlueColor;
-        mask-image: url(/image/field_button.svg);
-        position: absolute;
-        top: 158px;
-        left: 252px;
-    }
+    // &__button {
+    //     width: 18px;
+    //     height: 17px;
+    //     background: $mainBlueColor;
+    //     mask-image: url(/image/field_button.svg);
+    //     position: absolute;
+    //     top: 158px;
+    //     left: 252px;
+    // }
 
     &__label--message {
         width: 592px;
@@ -107,6 +107,6 @@
 }
 
 // не вийшло прибирати зірку
-.field__label--redstar:hover .field__redstar {
-    color: rgba(207, 0, 0, 0);
-}
+// .field__label--redstar:hover .field__redstar {
+//     color: rgba(207, 0, 0, 0);
+// }

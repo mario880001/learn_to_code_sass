@@ -20,63 +20,76 @@
                 <img class="logo__image" src="image/cube.svg" alt="The Box logo company">
                 <span class="logo__label">The Box</span>
             </a>
-            <ul class="nav">
-                <li class="nav__list"><a class="nav__link" href="#" target="">Home</a></li>
-                <li class="nav__list"><a class="nav__link" href="#about_us" target="">About Us</a></li>
-                <li class="nav__list"><a class="nav__link" href="#projects" target="">Projects</a></li>
-                <li class="nav__list"><a class="nav__link" href="#services" target="">Services</a></li>
-                <li class="nav__list"><a class="nav__link" href="#contact_us" target="">Contact Us</a></li>
-            </ul>
+            <nav class="">
+                <ul class="list">
+                    <li class="list__item">
+                        <a class="list__link" href="#" target="_self">Home</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#about_us" target="_self">About Us</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#projects" target="_self">Projects</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#services" target="_self">Services</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#contact_us" target="_self">Contact Us</a>
+                    </li>
+                </ul> 
+            </nav>
+            
         </header>
 
         <div class="mission">
-            <h1 class="mission__building">Building things is our mission.</h1>
+            <h1 class="mission__title">Building things is our mission.</h1>
             <div class="mission__feature">
-                <h2 class="mission__feature__name">Feature Projects</h2>
-                <p class="mission__feature__building">The National University of Architecture</p>
+                <h2 class="mission__feature-name">Feature Projects</h2>
+                <p class="mission__feature-building">The National University of Architecture</p>
             </div>
             <button class="mission__back"> <span class="mission__backarrow"></span> Back</button>
             <button class="mission__next">Next <span class="mission__nextarrow"></span></button>
         </div>
 
         <div class="reputation">
-            <h2 class="reputation__item">Our Reputation</h2>
-            <ul class="reputation__box">
-                <li class="bestbox">
-                    <img class="bestbox__image" src="image/reputation_services.svg" alt="Icon service">
-                    <p class="bestbox__name">Best Services</p>
-                    <p class="bestbox__description">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+            <h2 class="reputation__title">Our Reputation</h2>
+            <ul class="reputation__list">
+                <li class="reputation-item">
+                    <img class="reputation-item__image" src="image/reputation_services.svg" alt="Icon service">
+                    <p class="reputation-item__name">Best Services</p>
+                    <p class="reputation-item__description">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
                 </li>
-                <li class="bestbox">
-                    <img class="bestbox__image" src="image/reputation_services.svg" alt="Icon service">
-                    <p class="bestbox__name">Best Teams</p>
-                    <p class="bestbox__description">Cursus semper tellus volutpat aliquet lacus. </p>
+                <li class="reputation-item">
+                    <img class="reputation-item__image" src="image/reputation_services.svg" alt="Icon service">
+                    <p class="reputation-item__name">Best Teams</p>
+                    <p class="reputation-item__description">Cursus semper tellus volutpat aliquet lacus. </p>
                 </li>
-                <li class="bestbox">
-                    <img class="bestbox__image" src="image/reputatiom_designs.svg" alt="Icon designs">
-                    <p class="bestbox__name">Best Designs</p>
-                    <p class="bestbox__description">Ultricies at ipsum nunc, tristique nam lectus.</p>
+                <li class="reputation-item">
+                    <img class="reputation-item__image" src="image/reputatiom_designs.svg" alt="Icon designs">
+                    <p class="reputation-item__name">Best Designs</p>
+                    <p class="reputation-item__description">Ultricies at ipsum nunc, tristique nam lectus.</p>
                 </li>
             </ul>
         </div>
 
         <div class="history" id="about_us">
-            <img class="history__image" src="image/portret.jpg" alt="">
-            <div class="history__block">
-                <h2 class="history__title">About us</h2>
-                <p class="history__text">For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way. <br><br> We've matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
-                <button class="history__button">More on Our History</button>
+            <img class="history__image" src="image/portret.jpg" alt="Portrait of the founder of the company">
+            <div class="history-block">
+                <h2 class="history-block__title">About us</h2>
+                <p class="history-block__text">For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way. <br><br> We've matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+                <button class="history-block__button">More on Our History</button>
             </div>
         </div>
         
         <div class="services" id="services">
             <h2 class="services__title">Services</h2>
-            <ul class="services__box">
+            <ul class="services__list">
                 <li class="services__item services__item--white">
                     <div class="services__icon">
                         <div class="services__picture"></div>
-                        <img class="services__logos services__logos--construction" src="image/services_construction.svg" alt="">
-                        <img class="services__logos services__logos--constructiontoo" src="image/services_construction2.svg" alt="">
+                        <img class="services__logos services__logos--construction" src="image/services_construction.svg" alt="Icon building">
+                        <img class="services__logos services__logos--constructiontoo" src="image/services_construction2.svg" alt="Icon building">
                     </div>
                     <hr class="services__line">
                     <p class="services__name">Construction</p>
@@ -84,7 +97,7 @@
                 <li class="services__item">
                     <div class="services__icon">
                         <div class="services__picture"></div>
-                        <img class="services__logos services__logos--renovation" src="image/services_renovation.svg" alt="">
+                        <img class="services__logos services__logos--renovation" src="image/services_renovation.svg" alt="Icon renovation">
                     </div>
                     <hr class="services__line">
                     <p class="services__name services__name--white">Renovation</p>
@@ -92,7 +105,7 @@
                 <li class="services__item services__item--white">
                     <div class="services__icon">
                         <div class="services__picture"></div>
-                        <img class="services__logos services__logos--consultation" src="image/services_consultation.svg" alt="">
+                        <img class="services__logos services__logos--consultation" src="image/services_consultation.svg" alt="Icon shaking hands">
                     </div>
                     <hr class="services__line">
                     <p class="services__name">Consultation</p>
@@ -100,7 +113,7 @@
                 <li class="services__item">
                     <div class="services__icon">
                         <div class="services__picture"></div>
-                        <img class="services__logos services__logos--repair" src="image/services_repair.svg" alt="">
+                        <img class="services__logos services__logos--repair" src="image/services_repair.svg" alt="Icon a suitcase with tools">
                     </div>
                     <hr class="services__line">
                     <p class="services__name services__name--white">Repair Services</p>
@@ -108,7 +121,7 @@
                 <li class="services__item services__item--white">
                     <div class="services__icon">
                         <div class="services__picture"></div>
-                        <img class="services__logos services__logos--architecture" src="image/services_architecture.svg" alt="">
+                        <img class="services__logos services__logos--architecture" src="image/services_architecture.svg" alt="Icon drawing compass">
                     </div>
                     <hr class="services__line">
                     <p class="services__name">Architecture</p>
@@ -116,8 +129,8 @@
                 <li class="services__item">
                     <div class="services__icon">
                         <div class="services__picture"></div>
-                        <img class="services__logos services__logos--electric" src="image/services_electric1.svg" alt="">
-                        <img class="services__logos services__logos--electrictoo" src="image/services_electric2.svg" alt="">
+                        <img class="services__logos services__logos--electric" src="image/services_electric1.svg" alt="Icon rosette">
+                        <img class="services__logos services__logos--electrictoo" src="image/services_electric2.svg" alt="Icon rosette">
                     </div>
                     <hr class="services__line">
                     <p class="services__name services__name--white">Electric</p>
@@ -126,47 +139,47 @@
         </div>
 
         <div class="experience">
-            <div class="experience__years">
-                <h2 class="experience__years__name">30 Years Experience</h2>
-                <p class="experience__years__description">Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
-                <button class="experience__years__button"><a class="experience__years__link"  href="#" target="_blank">Contact Us</a></button>
+            <div class="experience-years">
+                <h2 class="experience-years__name">30 Years Experience</h2>
+                <p class="experience-years__description">Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
+                <button class="experience-years__button">Contact Us</button>
             </div>
-            <ul class="experience__box">
-                <li class="experience__box__item experience__box__item--clients">
-                    <img class="experience__box__image experience__box__image--one" src="image/expereince_clients.svg" alt="icon">
-                    <p class="experience__box__number">84</p>
-                    <p class="experience__box__description">Happy Clients</p>
-                    <hr class="experience__box__line">
+            <ul class="experience-list">
+                <li class="experience-list__item experience-list__item--clients">
+                    <img class="experience-list__image experience-list__image--one" src="image/expereince_clients.svg" alt="Icon shaking hands">
+                    <p class="experience-list__number">84</p>
+                    <p class="experience-list__description">Happy Clients</p>
+                    <hr class="experience-list__line">
                 </li>
-                <li class="experience__box__item experience__box__item--completed">
-                    <img class="experience__box__image experience__box__image--two" src="image/expereince_completed.svg" alt="icon">
-                    <p class="experience__box__number">123</p>
-                    <p class="experience__box__description">Projects Completed</p>
-                    <hr class="experience__box__line">
+                <li class="experience-list__item experience-list__item--completed">
+                    <img class="experience-list__image experience-list__image--two" src="image/expereince_completed.svg" alt="Icon notebook">
+                    <p class="experience-list__number">123</p>
+                    <p class="experience-list__description">Projects Completed</p>
+                    <hr class="experience-list__line">
                 </li>
-                <li class="experience__box__item experience__box__item--win">
-                    <img class="experience__box__image experience__box__image--three" src="image/expereince_awards_win.svg" alt="icon">
-                    <p class="experience__box__number">37</p>
-                    <p class="experience__box__description">Awards Win</p>
-                    <hr class="experience__box__line">
+                <li class="experience-list__item experience-list__item--win">
+                    <img class="experience-list__image experience-list__image--three" src="image/expereince_awards_win.svg" alt="Icon cup">
+                    <p class="experience-list__number">37</p>
+                    <p class="experience-list__description">Awards Win</p>
+                    <hr class="experience-list__line">
                 </li>
-                <li class="experience__box__item experience__box__item--business">
-                    <img class="experience__box__image experience__box__image--four" src="image/expereince_business.svg" alt="icon">
-                    <p class="experience__box__number">30</p>
-                    <p class="experience__box__description">Years in Business</p>
-                    <hr class="experience__box__line">
+                <li class="experience-list__item experience-list__item--business">
+                    <img class="experience-list__image experience-list__image--four" src="image/expereince_business.svg" alt="Icon drawing">
+                    <p class="experience-list__number">30</p>
+                    <p class="experience-list__description">Years in Business</p>
+                    <hr class="experience-list__line">
                 </li>
             </ul>
         </div>
 
         <div class="consultation">
             <h2 class="consultation__title">Free consultation with exceptional quality</h2>
-            <div class="consultation__phone">
-                <p class="consultation__phone__call">Just one call away:&nbsp</p>
-                <a class="consultation__phone__number" href="tel:+84 1102 2703">+84 1102 2703</a>
+            <div class="consultation-phone">
+                <p class="consultation-phone__call">Just one call away:&nbsp;</p>
+                <a class="consultation-phone__number" href="tel:+84&nbsp;1102&nbsp;2703">+84 1102 2703</a>
             </div>
-            <div class="consultation__button">
-                <a class="consultation__button__link" href="#" target="_blank">Get your consultation</a>
+            <div class="consultation-button">
+                <a class="consultation-button__link" href="#" target="_blank">Get your consultation</a>
             </div>
         </div>
 
@@ -182,23 +195,23 @@
             </aside>
             <main class="content">
                 <figure class="catalog">
-                    <img class="catalog__image" src="image/projects_Wildstone Infra Hotel.png" alt="">
-                    <figcaption class="catalog__building">Wildstone Infra Hotel</figcaption>
+                    <img class="catalog__image" src="image/projects_Wildstone_Infra_Hotel.png" alt="Hotel windows">
+                    <p class="catalog__building">Wildstone Infra Hotel</p>
                     <figcaption class="catalog__address">2715 Ash Dr. San Jose, South Dakota</figcaption>
                 </figure>
                 <figure class="catalog">
-                    <img class="catalog__image" src="image/projects_Wish Stone Building.png" alt="">
-                    <figcaption class="catalog__building">Wish Stone Building</figcaption>
+                    <img class="catalog__image" src="image/projects_Wish_Stone_Building.png" alt="Corner of the building">
+                    <p class="catalog__building">Wish Stone Building</p>
                     <figcaption class="catalog__address">2972 Westheimer Rd. Santa Ana, Illinois</figcaption>
                 </figure>
                 <figure class="catalog">
-                    <img class="catalog__image" src="image/projects_Mr. Parkinston’s House.png" alt="">
-                    <figcaption class="catalog__building">Mr. Parkinston’s House</figcaption>
+                    <img class="catalog__image" src="image/projects_Mr._Parkinston’s_House.png" alt="Stairs of a two-story house">
+                    <p class="catalog__building">Mr. Parkinston’s House</p>
                     <figcaption class="catalog__address">3517 W. Gray St. Utica, Pennsylvania</figcaption>
                 </figure>
                 <figure class="catalog">
-                    <img class="catalog__image" src="image/projects_Oregano Height.png" alt="">
-                    <figcaption class="catalog__building">Oregano Height</figcaption>
+                    <img class="catalog__image" src="image/projects_Oregano_Height.png" alt="Multi-storey glass building">
+                    <p class="catalog__building">Oregano Height</p>
                     <figcaption class="catalog__address">2464 Royal Ln. Mesa, New Jersey</figcaption>
                 </figure>
                 <div class="buttons">
@@ -217,28 +230,28 @@
 
         <div class="information">
             <h2 class="information__title">What can us do for you?</h2>
-            <form class="form" action="">
+            <form class="form" action="rrrr">
                 <div class="field" role="group" aria-labelledby="info-head">
                     <p class="field__description" id="info-head">We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
                     
                     <label class="field__label--redstar">
                         <input class="field__label " type="text" name="username" placeholder="Your Name*" required>
-                        <p class="field__redstar">*</p>
+                        <!-- <p class="field__redstar">*</p> -->
                     </label>
     
                     <label class="">
                         <input class="field__label" type="text" name="email" placeholder="Email*" required>
                     </label>
 
-                    <label class="">
-                        <input class="field__label" list="contactings" name="contactings" placeholder="Reason for Contacting*" >
-                        <datalist id="contactings">
+                    <label class="" for="contactings">
+                        <!-- <input class="field__label" list="contactings" name="contactings" placeholder="Reason for Contacting*" > -->
+                        <select  class="field__label" id="contactings">
                             <option value="Commercial">Commercial</option>
                             <option value="Commercial LUX">Commercial LUX</option>
                             <option value="Residential">Residential</option>
                             <option value="Residential LUX">Residential LUX</option>
-                        </datalist>
-                        <div class="field__button"></div>
+                        </select>
+                        <!-- <div class="field__button"></div> -->
                     </label>
     
                     <label class="">
@@ -247,7 +260,7 @@
                     
     
                     <label class="">
-                        <textarea class="field__label field__label--message" class="tito" name="message" rows="10" placeholder="Message"></textarea>
+                        <textarea class="field__label field__label--message" name="message" rows="10" placeholder="Message"></textarea>
                     </label>
                 </div>
                 <p class="form__required"><span class="form__red">*</span> indicates a required field</p>
@@ -259,7 +272,7 @@
             <div class="communication">
                 <div class="communication1">
                     <p class="communication1__address"><span class="communication1__bigtext">Address:</span> &nbsp;<a class="communication1__link" href="">6391 Elgin St. Celina, Delaware 10299</a></p>
-                    <p class="communication1__address"><span class="communication1__bigtext">Phone:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="communication1__link" href="tel:+84 1102 2703">+84 1102 2703</a></p>
+                    <p class="communication1__address"><span class="communication1__bigtext">Phone:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="communication1__link" href="tel:+84&nbsp;1102&nbsp;2703">+84 1102 2703</a></p>
                     <p class="communication1__address"><span class="communication1__bigtext">Email:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="communication1__link" href="mailto:hello@thebox.com">hello@thebox.com</a></p>
                     <a class="logo" href="#">
                         <img class="logo__image" src="image/cube.svg" alt="The Box logo company">

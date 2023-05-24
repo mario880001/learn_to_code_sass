@@ -18,16 +18,18 @@
         height: 247px;
     }
 
-    &__building {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
+    &__building, &__address {
         color: $mainWhiteColor;
         padding: 12px 0 0 12px;
     }
 
+    &__building {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
     &__address {
-        @extend .catalog__building;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;

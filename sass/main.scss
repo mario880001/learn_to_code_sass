@@ -27,12 +27,12 @@
 
 @import 'components/logo';
 
-.nav {
+.list {
     display: flex;
     list-style: none;
     padding: 0;
 
-    &__list:not(:last-child) {
+    &__item:not(:last-child) {
         margin-right: 50px;
     }
 
@@ -57,7 +57,7 @@
     background-size: cover;
     position: relative;
 
-    &__building {
+    &__title {
         font-weight: 600;
         font-size: 72px;
         line-height: 84px;
@@ -98,14 +98,14 @@
         height: 17px;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url("/image/arrow_left.svg");
+        background-image: url("/image/arrow.svg");
         display: inline-block;
         position: relative;
         bottom: -2px;
     }
 
     &__nextarrow {
-        background-image: url("/image/arrow_right.svg");
+        transform: rotate(180deg);
     }
 }
 
@@ -117,19 +117,19 @@
     right: 0;
     bottom: 40px;
 
-    &__name, &__building {
+    &-name, &-building {
         color: $mainWhiteColor;
         text-align: center;
         margin-top: 20px;
     }
     
-    &__name {
+    &-name {
         font-weight: 700;
         font-size: 20px;
         line-height: 23px;
     }
 
-    &__building {
+    &-building {
         font-weight: 400;
         font-size: 24px;
         line-height: 28px;
@@ -141,7 +141,7 @@
     width: 1440px;
     height: 433px;
 
-    &__item {
+    &__title {
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
@@ -150,7 +150,7 @@
         padding-bottom: 50px;
     }
 
-    &__box {
+    &__list {
         padding: 0;
         list-style: none;
         display: flex;
@@ -159,7 +159,7 @@
     }
 }
 
-.bestbox {
+.reputation-item {
     border: 1px solid #E0E3EB;
     border-radius: 4px;
     width: 292px;
@@ -196,15 +196,15 @@
         left: 114px;
         object-fit: cover;
     }
+}
 
-    &__block {
-        width: 488px;
-        height: 523px;
-        background-color: $mainBlueColor;
-        position: absolute;
-        top: 147px;
-        right: 112px;
-    }
+.history-block {
+    width: 488px;
+    height: 523px;
+    background-color: $mainBlueColor;
+    position: absolute;
+    top: 147px;
+    right: 112px;
 
     &__title {
         font-weight: 700;
@@ -249,59 +249,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.services__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    margin: 44px 0 36px 0;
-}
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        margin: 44px 0 36px 0;
+    }
 
-.services__box {
-    list-style: none;
-    padding: 0;
-    width: 1009px;
-    height: 410px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
-}
+    &__list {
+        list-style: none;
+        padding: 0;
+        width: 1009px;
+        height: 410px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
 
-.services__item {
-    background-color: $mainBlueColor;
-    border-radius: 4px;
-    width: 271px;
-    height: 181px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    &__item {
+        background-color: $mainBlueColor;
+        border-radius: 4px;
+        width: 271px;
+        height: 181px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__item--white {
+        background-color: $mainWhiteColor;
+    }
 
-.services__item--white {
-    background-color: $mainWhiteColor;
-}
-
-.services__icon {
-    width: 50px;
-    height: 50px;
-    position: relative;
-}
-
-@mixin miniBox ($color) {
-    background-color: $color;
-}
-
-.services__picture {
-    width: 23.3px;
-    height: 23.3px;
-    @include miniBox (#7595FD);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    &__icon {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+    
+    @mixin miniBox ($color) {
+        background-color: $color;
+    }
+    
+    &__picture {
+        width: 23.3px;
+        height: 23.3px;
+        @include miniBox (#7595FD);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 .services__logos {
@@ -390,7 +390,7 @@
     flex-direction: row-reverse;
 }
 
-.experience__years {
+.experience-years {
     flex-basis: 500px;
 
     &__name {
@@ -418,19 +418,15 @@
         background-color: $mainBlueColor;
         border: none;
         border-radius: 2px;
-        
-    }
-
-    &__link {
         font-weight: 600;
         font-size: 18px;
         line-height: 21px;
         color: $mainWhiteColor;
-        text-decoration: none;
+        cursor: pointer;
     }
 }
 
-.experience__box {
+.experience-list {
     flex-grow: 1;
     list-style-type: none;
     padding: 0;
@@ -542,7 +538,7 @@
     }
 }
 
-.consultation__phone {
+.consultation-phone {
     display: flex;
     padding: 30px 0 0 112px;
     
@@ -554,7 +550,7 @@
     }
 }
 
-.consultation__button {
+.consultation-button {
     width: 233px;
     height: 52px;
     border: 3px solid $mainWhiteColor;
