@@ -8,13 +8,27 @@
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   height: auto;
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 500px;
+  }
+}
 .box {
-  width: 1440px;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,7 +55,6 @@
           align-items: center;
   text-decoration: none;
 }
-
 .logo__label {
   font-style: italic;
   font-weight: 700;
@@ -72,7 +85,6 @@
 }
 
 .mission {
-  width: 1440px;
   height: 646px;
   background-color: #b91010;
   background-image: url(../image/build11.jpg);
@@ -151,7 +163,6 @@
 }
 
 .reputation {
-  width: 1440px;
   height: 433px;
 }
 .reputation__title {
